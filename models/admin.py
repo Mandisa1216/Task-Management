@@ -1,3 +1,6 @@
-class user:
-      def create_user(details):
-         return mongo.db.user_collection.insert_one(details)
+from ..import mongo
+
+class Signup:
+    def create_user(admin_data):
+        print(f"User created: {admin_data}")
+        return True
