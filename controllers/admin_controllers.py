@@ -3,7 +3,6 @@ from ..models.admin import Signup
 from flask import Flask, render_template, request, redirect, url_for
 import bcrypt
 
-
 def signup():
     admin = {
     "full_name" : request.json.get('full_name'),
