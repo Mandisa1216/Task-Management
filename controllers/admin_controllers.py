@@ -1,6 +1,7 @@
 from flask import Flask,url_for,redirect,Response,request,render_template,session, jsonify
 from ..models.admin import Signup
 from flask import Flask, render_template, request, redirect, url_for
+import bcrypt
 
 
 def signup():
