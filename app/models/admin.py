@@ -1,10 +1,9 @@
 from ..import mongo
-from flask import Flask, request, jsonify
 
 
-class Signup:
-    def create_app(admin_data):
-        print(f"User created: {admin_data}")
-        return True
+class Get_admin:
+    def admin_collection(admin_data):
+        return mongo.db.admin_collection.insert_one(admin_data)
+        
     
     
