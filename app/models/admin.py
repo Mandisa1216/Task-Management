@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 
 
 class Signup:
-    def create_user(admin_data):
+    def create_app(admin_data):
         print(f"User created: {admin_data}")
         return True
     
