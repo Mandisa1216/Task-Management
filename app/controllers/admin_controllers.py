@@ -11,10 +11,10 @@ def signup_admin():
     cell_number = request.json.get('cell_number')
     password = request.json.get('password')
     
-    signup = {'full_name': full_name,  'email': email,'cell_number': cell_number, 'password': password,}
-    Get_admin.create_new(signup)
+    admin_data = {'full_name': full_name,  'email': email,'cell_number': cell_number, 'password': password,}
+    Get_admin.create_new(admin_data)
    
-    return jsonify({'message': 'succesful'})
+    return jsonify({'message': 'succesfully signup'})
 
 # def admin_login():
 #     admin_login = {
